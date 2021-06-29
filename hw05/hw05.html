@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>hw05</title>
+        <style>
+            #id1 {
+                color : black;
+                background-color : pink;
+ 	        }	
+            div.background {
+                background: url(./img/lightbulb.jpg) repeat;
+                border: 1px solid black;
+            }
+            div.box {
+                margin: 30px;
+                background-color: cadetblue;
+                border: 2px solid cadetblue;
+                opacity: 0.8;
+            }
+            div.box p{
+                margin: 5%;
+                font-weight: bold;
+                color: black;
+            }
+            div.tip {opacity: 0.1;}
+            div.ans {opacity: 0.0;}
+            div.tip:hover{opacity:1.0; color: green;}
+            div.ans:hover{opacity:1.0; color: brown;}
+        </style>
+    </head>
+    <body>
+        <div class="background">
+            <div class="box">
+                <center><p><h1>QUIZ TIME</h1></p></center>
+            </div>
+        </div>
+        <div id="id1"><p>[문제 1] 나의 생일은?</p></div>
+        <input type="radio" name="bday" value="a">a. 10/11
+        <input type="radio" name="bday" value="b">b. 10/12
+        <input type="radio" name="bday" value="c">c. 10/13
+        <input type="radio" name="bday" value="d">d. 10/14
+        <p></p>
+        [힌트] <div class="tip"><a href="private.html">private.html </a> 방문 </div>
+        <p></p>
+        [답] <div class="ans">a. 10/11</div>
+        <div id="id1"><p>[문제 2] 나의 전공은?</p></div>
+        <input type="radio" name="major" value="a">a. 컴퓨터학과
+        <input type="radio" name="major" value="b">b. 정보통계학과
+        <input type="radio" name="major" value="c">c. 경영학과
+        <input type="radio" name="major" value="d">d. 성악과
+        <p></p>
+        [힌트] <div class="tip"> <a href="univ.html">univ.html</a> 방문 </div>
+        <p></p>
+        [답] <div class="ans">b. 정보통계학과</div>
+        <p></p>
+        <div id="id1"><p>[문제3] 나의 인스타그램 아이디는?</p></div>
+        <p>입력: <input type="text" name="ID" size="30" required></p>
+        <p></p>
+        [힌트] <div class="tip"> <a href="hw02.html">hw02.html</a> 방문</div>
+        <p></p>
+        [답] <div class="ans"> thdud_99_</div>
+        <p></p>
+        <hr size="1" align="left" width="1000" noshade="noshade"></hr>
+        <input type="submit" value="제출">
+        <input type="reset" value="다시작성">
+        <p></p>
+        <hr size="5" noshade="noshade"></hr>
+        <p></p>
+        <div id="id1">제출했으면 <a href="congrat.html">여기</a>를 클릭해주세요.</div>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <footer>
+            <small>&copy; 20190959 문소영</small>
+        </footer>
+    </body>
+</html>
