@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>hw06</title>
+        <h3><center>좋아하는 드라마</center></h3>
+        <hr size="2" align="center" width="1000" noshade="noshade">
+        <br>
+        <style>
+             #id1 {
+                color : black;
+                background-color : pink;
+ 	        }	
+            #grid {
+                border: 5px solid pink;
+                display: grid;
+                grid-template-columns: 150px 1fr;
+            }
+            div {
+                border: 5px solid gray;
+            }
+            body { font-size: 12pt;}
+            .sp {
+                position: static;
+                background-color: darksalmon; width: 400px; height: 500px;
+            }
+            .rp {
+                position: relative;
+                left: 400px; top: -5px;
+                background-color: darksalmon; width: 500px; height: 300px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="grid">
+            <div> <img src="./img/modernfamily.jpg" width="150px"><br>모던 패밀리 </div>
+            <div> season 11로 완결, 미국 드라마<p></p>
+                  <b>줄거리:</b> 프리쳇 일가와 그 주위 사람들의 이야기를 다룬 일상 시트콤
+                  <br><b>평점:</b> ★★★★
+                  <br><b>한줄평: </b>밥 먹을때 가볍게 볼 수 있는 유쾌한 드라마
+            </div>
+        </div>
+        <div id="grid">
+            <div> <img src="./img/hepoomdal.jpg" width="150px"><br>해를 품은 달 </div>
+            <div> mbc 미니 시리즈 <p></p>
+                <b>줄거리:</b> 궁중 로맨스. 조선의 왕 "이훤"과 무녀 "월"의 운명과 사랑이야기를 다룬 퓨전 사극
+                <br><b>평점:</b> ★★★
+                <br><b>한줄평:</b> 아역이 살렸다.
+                 </div>
+        </div>
+        <div id="grid">
+            <div> <img src="./img/skycastle.jpg" width="150px"><br>sky 캐슬 </div>
+            <div> jtbc 미니 시리즈 <p></p>
+                <b>줄거리:</b> 대한민국 상위 0.1%가 모여 사는 SKY 캐슬 안에서 남편은 왕으로, 제 자식은 천하제일 왕자와 공주로 키우고 싶은 명문가 출신 사모님들의 처절한 욕망을 샅샅이 들여다보는 리얼 코믹 풍자 드라마이다.
+                  <br><b>평점:★★★★</b>
+                  <br><b>한줄평: </b>상위 0.1%의 광기
+            </div>
+        </div>
+        <form>
+            <div class="rp">
+                <fieldset>
+                    <legend><h2>당신이 좋아하는 드라마를 공유해주세요!</h2></legend>
+                    <textarea rows="3" cols="50">드라마 제목을 적어주세요.</textarea>
+                    <p></p>
+                    <input type="submit" value="제출">
+                </fieldset>
+            </div>
+        </form>
+        <footer>
+            <br>
+            <div id="id1"><p><small>&copy; 동덕여자대학교 정보통계학과 20190959 문소영</small></p></div>
+        </footer>
+    </body>
+</html>
