@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>hw07</title>
+        <div class="background">           
+            <div class="box">
+               <p><center><h1>영화를 추천해드립니다</h1></center></p>
+            </div>
+        </div>
+        <hr size="2" align="center" noshade="noshade">
+        <br>
+        <style>
+            .clear{
+                clear: both;
+            }
+            header {
+                width: 800px;
+                height: 60px;
+                margin: 2px;
+                border: solid 2px gold;
+            }
+            aside {
+                width: 175px;
+                height: 390px;
+                float: left;
+                padding: 2px;
+                border: solid 2px black;
+            }
+           main {
+               width: 800px;
+               height: 400px;
+               margin: 2px;
+               border: solid 2px black;
+           }
+           section {
+               width: 600px;
+               height: 190px;
+               margin: 2px 180px;
+               border: solid 2px mediumpurple;
+
+           }
+           footer {
+                width: 800px;
+                height: 90px;
+                margin: 2px;
+                border: solid 2px black;
+           }
+           div.background {
+               background: url(./img/movie.jpg) repeat;
+           }
+           div.box{
+               margin: 30px;
+               background-color: sandybrown;
+               border: 2px soild sandybrown;
+               opacity: 0.5;
+           }
+           div.box p {
+                margin: 5%;
+                font-weight: bold;
+                color: black;
+                text-align: center;
+           }
+            #grid {
+                border: 5px solid pink;
+                display: grid;
+                grid-template-columns: 150px 1fr;
+            }
+            #box {
+                position: absolute;
+                left: 10px; width: 150px; height:50px;
+                background-color: sandybrown;
+                border: 1px solid sandybrown;
+                transition-property: width background;
+                transition-duration: 2s;
+                line-height: 50px;
+
+            }
+            #box:hover{
+                width: 200px;
+                transition-timing-function: linear;
+                background-color: bisque;
+                color: white;
+                text-align: center;
+                font-size: 10px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <aside>
+            <div id="box" style="top:100px"><a href="hw05.html"><small>내가 좋아하는 영화</small></a></div>
+            <div id="box" style="top:150px"><a href="horror.html"><small>호러&스릴러</small></a></div>
+            <div id="box" style="top:200px"><a href="disney.html"><small>디즈니</small></a></div>
+            <div id="box" style="top:250px"><a href="fantasy.html"><small>판타지</small></a></div>
+        </aside>
+        <main>
+            <section><h1>어떤 영화가 보고싶나요?</h1></section>
+            <section><h1>장르 별로 추천해드립니다! <br>왼쪽 카테고리를 눌러주세요.</h1></section>
+        </main>
+        <hr size="10" align="left" width="810px" noshade="noshade">
+        <footer>
+            <small>&copy; 20190959 문소영</small>
+            <p><small>e-mail: stela3788@naver.com</small></p>
+        </footer>
+    </body>
+</html>
