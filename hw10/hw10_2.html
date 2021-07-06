@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>구구단</title>
+		<script>
+			function printTable() {
+				var target = document.getElementById("table");
+				var i, j;
+				var Arr = new Array();
+				var result;
+				var tbl = "";   
+
+				tbl += "<table border='1'>";
+				for (var i = 1; i <= 9; i++) {
+					tbl += ("<th>" + i + "단" + "</th>")
+					Arr[i] = new Array();
+				}
+				for(i=1; i<=9; i++) {
+					tbl += "<tr>";
+					for(j=1; j<=9; j++) {
+						Arr[j][i] = i * j;
+						tbl += "<td>" + j + '*' + i + '=' + Arr[j][i] + "</td>";
+					}
+					tbl += "</tr>";
+				}
+				tbl += "</table>";
+				target.innerHTML = tbl;
+			}
+		</script>
+	</head>
+	<body>
+		<span id="table"></span>
+		<p></p>
+		<input id="button" type="button" value="구구단 배열 데이터 보기" onclick="printTable();" />
+	</body>
+</html>
