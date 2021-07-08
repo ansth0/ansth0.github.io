@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>문제3</title>
+        <style>
+            #eng {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var check_capital = /[A-Z]/;
+            var check_small = /[a-z]/;
+            var check_eng = /[a-zA-z]/;
+
+            var eng = prompt("영문자를 입력하세요: ")
+
+            if(eng == null){
+                alert("입력을 취소했습니다.");
+            }
+            if (check_eng.test(eng) == false) {
+                
+                document.write(eng + "는 영문자가 아닙니다.");
+            }
+            else if(check_capital.test(eng) == true) {
+                document.write("입력한 글자는 대문자 " + eng + "입니다.");
+            }
+            else if(check_small.test(eng) == true) {
+                document.write("입력한 글자는 소문자 " + eng + "입니다.");
+            }              
+        </script>
+    </body>
+</html>
