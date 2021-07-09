@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>hw13_2</title>
+        <script src="//code.jquery.com/jquery-3.6.0.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("img.sc:first", this).hide();
+                $("#soccer").click(function() {
+                    $("img.sc").toggle();
+                });
+                $("img.bkb:first", this).hide();
+                $("#basketball").click(function() {
+                    $("img.bkb").toggle();
+                });
+                $("img.bsb:first", this).hide();
+                $("#baseball").click(function() {
+                    $("img.bsb").toggle();
+                });
+            });
+        </script>
+        <style>
+            body {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>당신이 좋아하는 스포츠는?</h1>
+        <br>
+        <br>
+        <button id="soccer">프로축구</button>&nbsp;&nbsp;&nbsp;
+        <button id="baseball">프로야구</button>&nbsp;&nbsp;&nbsp;
+        <button id="basketball">프로농구</button>
+        <br>
+        <br>
+        <img class="sc" src="./img/sc.jpg" width="200px" height="200px"/>
+        <img class="bsb" src="./img/bsb.jpg" width="200px" height="200px"/>
+        <img class="bkb" src="./img/bkb.jpg" width="300px" height="200px"/>
+    </body>
+</html>

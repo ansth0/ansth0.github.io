@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>hw13_1</title>
+        <script src="//code.jquery.com/jquery-3.6.0.js"></script>
+        <script>
+            var a=0;
+            var b=0;
+            var c=0;
+            $(document).ready(function() {
+                $("div.box1").mousedown(function() {
+                    $("p:first", this).text("mouse down");
+                    ++a;
+                    $("p:last", this).text("총 클릭 횟수: " + a);
+                });
+
+                $("div.box2").mousedown(function() {
+                    $("p:first", this).text("mouse down");
+                    ++b;
+                    $("p:last", this).text("총 클릭 횟수: " + b);
+                });
+                $("div.box3").mousedown(function() {
+                    $("p:first", this).text("mouse down");
+                    ++c;
+                    $("p:last", this).text("총 클릭 횟수: " + c);
+                });
+            });
+        </script>
+        <style>
+            div.box1 {
+                width: 200px;
+                height: 100px;
+                border: 1px solid black;
+                text-align: left;
+                background-color: yellow;
+            }
+            div.box2 {
+                width: 200px;
+                height: 100px;
+                border: 1px solid black;
+                text-align: left;
+                background-color: cadetblue;
+            }
+            div.box3 {
+                width: 200px;
+                height: 100px;
+                border: 1px solid black;
+                text-align: left;
+                background-color: cyan;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box1">
+            <p>마우스 클릭 횟수</p>
+            <p>0</p>
+        </div>
+        <br>
+        <div class="box2">
+            <p>마우스 클릭 횟수</p>
+            <p>0</p>
+        </div>
+        <br>
+        <div class="box3">
+            <p>마우스 클릭 횟수</p>
+            <p>0</p>
+        </div>
+    </body>
+</html>

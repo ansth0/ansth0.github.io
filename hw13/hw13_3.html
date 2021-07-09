@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>hw13_3</title>
+        <script src="//code.jquery.com/jquery-3.6.0.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("img.smallimg:last", this).show();
+                $("button.bttn").click(function() {
+                    $("img.smallimg:last", this).toggle();
+                    $("img.bigimg").slideToggle();
+                });
+            });
+        </script>
+    </head>
+    <body>  
+        <img class="smallimg" src="./img/IMG_7790.JPG" width="200" height="300">
+        <br>
+        <button class="bttn">큰 이미지 보기/닫기</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <img class="bigimg" src="./img/IMG_7790.JPG" width="400" height="500">
+    </body>
+</html>
